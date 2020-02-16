@@ -1,20 +1,10 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-
 html {
-  font-family: sans-serif; /* 1 */
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%; /*Prevent iOS text size adjust after orientation change, without disabling user zoom.*/
+  -webkit-text-size-adjust: 100%; 
 }
-
-/**
- * Remove default margin.
- */
 
 body {
   margin: 0;
@@ -28,7 +18,7 @@ body {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
- */
+ 
 
 article,
 aside,
@@ -44,7 +34,7 @@ nav,
 section,
 summary {
   display: block;
-}
+} */
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
@@ -133,8 +123,8 @@ dfn {
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 4em;
+  margin: 0.5em 0;
 }
 
 /**
