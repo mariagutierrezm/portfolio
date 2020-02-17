@@ -1,8 +1,7 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
-/* HTML5 display definitions
-   ========================================================================== */
- /**
+/* HTML5 display definitions ======== */
+/**
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
@@ -14,7 +13,8 @@ template {
 
 a:active,
 a:hover {
-  outline: 0; /* Improve readability when focused and also mouse hovered in all browsers.*/
+  outline: 0;
+  /* Improve readability when focused and also mouse hovered in all browsers.*/
 }
 
 h1 {
@@ -27,7 +27,8 @@ small {
 }
 
 sub,
-sup { /*Prevent `sub` and `sup` affecting `line-height` in all browsers.*/
+sup {
+  /*Prevent `sub` and `sup` affecting `line-height` in all browsers.*/
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -47,13 +48,15 @@ img {
 }
 
 pre {
-  overflow: auto; /*Contain overflow in all browsers.*/
+  overflow: auto;
+  /*Contain overflow in all browsers.*/
 }
 
 code,
 kbd,
 pre,
-samp { /*Address odd `em`-unit font size rendering in all browsers.*/
+samp {
+  /*Address odd `em`-unit font size rendering in all browsers.*/
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -63,35 +66,33 @@ button {
   text-transform: none;
 }
 
-/* page css st ==============*/
+/*==============*/
 
 html {
   font-family: sans-serif;
-  -ms-text-size-adjust: 100%; /*Prevent iOS text size adjust after orientation change, without disabling user zoom.*/
-  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%;
+  /*Prevent iOS text size adjust after orientation change, without disabling user zoom.*/
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
-  /* background-color: #29a3a3; */
-  /* background-image: linear-gradient(to right, #04614b, #05a1c2, #04614b); */
-  /* #c90041  #a413dd #da217c*/
-  /* background-image: linear-gradient(to right, #ac66d1, #b681d2, #ac66d1); */
-  /* background-image: linear-gradient(to right, #075ab1, #05a1c2, #075ab1); */
   background-image: linear-gradient(to right, #5d0093, #8900ad, #5d0093);
   font-family: "Lucida Sans Unicode", Lucida Sans Unicode, Helvetica, Arial, sans-serif;
   color: #222;
   font-size: 1.5em;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit; /*bar wide as window*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  /*bar wide as window*/
 }
 
 #topnav {
-  /* background: #F8F8FF; */
   overflow: hidden;
-  display: flex;  
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: fixed;
@@ -115,7 +116,7 @@ body {
   font-family: 'Courgette';
   font-size: 15px;
   font-weight: 700;
-  color: #ffffff; /*#ffbb2e; #29a3a3;*/
+  color: #ffffff;
   letter-spacing: 1px;
   margin: 0 12px;
   text-transform: uppercase;
@@ -124,7 +125,7 @@ body {
 }
 
 a:hover {
-  color: #993399;
+  color: #fbb922;
 }
 
 ul {
@@ -137,8 +138,14 @@ ul {
   color: #5d0093;
 }
 
-.contact-me:active, .github:active, .codepen:active {
+.contact-me:active,
+.github:active,
+.codepen:active {
   transform: translateY(0em) scale(0.9);
+}
+
+.contact-me {
+  scroll-behavior: smooth;
 }
 
 .logo {
@@ -154,7 +161,7 @@ ul {
   transition: 0.4s;
 }
 
-.logo:hover{
+.logo:hover {
   background-image: url('../images/LogoBlue.svg');
 }
 
@@ -162,46 +169,17 @@ ul {
   background-size: 60px;
 }
 
-/*
-.animation:focus{
-outline: 0;
-}
-
-.animation-round, .animation-ring, .animation-star{
-position: absolute;
-}
-
-.animation-round{
-width: 1em;
-height: 1em;
-background-color: #814a9c;
-border-radius: 50%;
-}
-
-.animation-ring{
-width: 0.8em;
-height: 0.8em;
-border: solid 0.35em #d580ff;
-border-radius: 50%;
-}
-
-.animation-star{
-width: 1.8em;
-height: 1.8em;
-/*   background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="%23006dd0" viewBox="0 0 24 24"%3E%3Cpath%20d%3D%22M12%2C17.27L18.18%2C21L16.54%2C13.97L22%2C9.24L14.81%2C8.62L12%2C2L9.19%2C8.62L2%2C9.24L7.45%2C13.97L5.82%2C21L12%2C17.27Z%22%3E%3C%2Fpath%3E%3C/svg%3E'); */
-/*}
-
-
-
-<!-- --> */
-.container, .projects, .contact, footer{
+.container,
+.projects,
+.contact,
+footer {
   position: relative;
   /* top: 104px; */
 }
 
 .container {
-  display: flex; 
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   flex: 1 100%;
   align-items: center;
@@ -210,10 +188,10 @@ height: 1.8em;
 
 .one-half {
   max-width: 710px;
-  width: 640px;
+  width: 690px;
   padding: 20px 20px;
   margin: 30px 10px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -227,7 +205,7 @@ height: 1.8em;
 
 .intro {
   margin: auto;
-} 
+}
 
 .intro h1 {
   font-family: 'Courgette';
@@ -244,8 +222,8 @@ height: 1.8em;
   color: #ffffff;
 }
 
-.btn{
-  margin: auto;  
+.btn {
+  margin: auto;
   display: block;
 }
 
@@ -253,11 +231,12 @@ a {
   text-decoration: none;
 }
 
-.btn, animation { /* Thanks to @SplittyDev */
+.btn,
+animation {
+  /* Thanks to @SplittyDev */
   color: #ffffff;
   font-family: 'Courgette', cursive;
   font-size: 18px;
-  /* background-color: #ffbb2e; */
   background-color: #c90041;
   width: 8.5em;
   height: 3em;
@@ -284,7 +263,7 @@ a {
 
 .projects {
   min-height: 100vh;
-  background-color: #ffffff;/*Use this maybe #fdd761 */
+  background-color: #ffffff;
 }
 
 .title {
@@ -295,17 +274,16 @@ a {
   text-align: center;
 }
 
-.title h2{
+.title h2 {
   font-family: 'Courgette', cursive;
   font-size: 38px;
   text-transform: uppercase;
   text-shadow: 0 0 7px #ffffff, 0 3px 3px #000000;
   margin: 20px 5px;
   padding: 20px 5px;
-  
 }
 
-.card--group{
+.card--group {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -337,7 +315,6 @@ a {
   text-transform: uppercase;
   transform: translate3d(0px, 140px, 0px);
   background-color: #f9d1f8ab;
-  /* font-family: 'Courgette'; */
 }
 
 .content {
@@ -347,7 +324,7 @@ a {
   transform: translate3d(0px, 430px, 0px);
 }
 
-.card:hover > .content {
+.card:hover>.content {
   transform: translate3d(0px, 310px, 0px);
 }
 
@@ -367,7 +344,7 @@ a {
   min-height: 90vh;
 }
 
-.designs h2{
+.designs h2 {
   color: #ffffff;
   font-family: 'Courgette', cursive;
   font-size: 38px;
@@ -376,13 +353,13 @@ a {
   padding: 20px 5px;
 }
 
-.designs p{
+.designs p {
   font-size: 25px;
   display: inline-flex;
   margin: 0;
 }
 
-.masonry{
+.masonry {
   -webkit-column-count: 4;
   -moz-column-count: 4;
   column-count: 4;
@@ -391,13 +368,12 @@ a {
   column-gap: .5em;
   margin: 0 7em;
   padding: 0;
-  /* background: rgba(0, 0, 0, 0.5); */
 }
 
-.masonry--element{
+.masonry--element {
+  -webkit-box-sizing: border-box;
   display: block;
   width: 100%;
-  -webkit-box-sizing: border-box;
   position: relative;
   padding-bottom: 5px;
 }
@@ -408,7 +384,7 @@ a {
   display: block;
 }
 
-.design-name{
+.design-name {
   background-color: #ffffff;
   width: 100%;
   height: 30%;
@@ -420,15 +396,15 @@ a {
   opacity: 0;
 }
 
-.masonry--element:hover > .design-name {
+.masonry--element:hover>.design-name {
   visibility: visible;
   opacity: 1;
- }
+}
 
 .contact {
   background: #F8F8FF;
-  display: flex; 
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
   min-height: 70vh;
@@ -441,9 +417,9 @@ a {
   padding: 10px 20px;
 }
 
-.hire-me{
+.hire-me {
   margin: auto;
-  font-family: 'Courgette' /*'Mansalva Courgette Life Savers'*/, cursive;
+  font-family: 'Courgette', cursive;
   color: #c696c4;
   text-align: center;
 }
@@ -459,6 +435,7 @@ label {
   font-size: 20px;
   max-width: 100%;
 }
+
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
@@ -486,40 +463,36 @@ input[type=submit]:hover {
   background-color: #550080;
 }
 
-textarea{
+textarea {
   width: 100%;
   margin: 5px 0;
 }
 
 .info {
-border-top: 1mm ridge rgb(170, 50, 220, .6);
-background: #F8F8FF;
-display: flex;
-justify-content: center;
+  border-top: 1mm ridge rgb(170, 50, 220, .6);
+  background: #F8F8FF;
+  display: flex;
+  justify-content: center;
 }
 
-.info h5{
+.info h5 {
   margin: 20px;
   padding: 30px;
   font-size: 14px;
   font-weight: lighter;
 }
 
-/* p, h2, h3, h4, a {
-font-family: inherit;
-} */
 
 
+@media only screen and (min-width: 1px) and (max-width: 766px) {
 
-@media only screen and (min-width: 1px) and (max-width: 766px){
- 
   #topnav {
     overflow: hidden;
-    display: block; 
+    display: block;
     height: 50px;
   }
 
-  .topnav--mobile{
+  .topnav--mobile {
     background: linear-gradient(to right, #5d0093, #8900ad, #5d0093);
     height: 50px;
     width: 100%;
@@ -533,7 +506,7 @@ font-family: inherit;
     height: 38px;
     width: 38px;
   }
- 
+
   .links {
     margin: 0;
     padding: 5px 20px;
@@ -543,9 +516,8 @@ font-family: inherit;
     position: relative;
     opacity: 0;
     height: 100vh;
-
   }
-  
+
   ul {
     display: block;
     margin-top: 10px;
@@ -556,25 +528,26 @@ font-family: inherit;
     margin: 5px 0;
     padding: 20px 0;
   }
-  
+
   .links a {
     font-size: 18px;
-    color: #ffffff; /*#ffbb2e; #29a3a3;*/
+    color: #ffffff;
     overflow: hidden;
     text-decoration: none;
-    
   }
-    
+
   a:hover {
     color: #d3a200;
   }
-  
-  .contact-me:active, .github:active, .codepen:active {
+
+  .contact-me:active,
+  .github:active,
+  .codepen:active {
     transform: translateY(0em) scale(0.97);
   }
-  
+
   .icon {
-    background: linear-gradient(45deg,  #f90e6e 10%, #b102c3);/*#05BCC9*/
+    background: linear-gradient(45deg, #f90e6e 10%, #b102c3);
     border-radius: 0% 0% 0% 100%;
     display: block;
     position: absolute;
@@ -600,48 +573,48 @@ font-family: inherit;
     transition: 0.5s;
   }
 
-  #open.on #one {
+  /* #open.on #one {
     transform: rotate(45deg) translateX(6px) translateY(6px);
   }
-  
+
   #open.on #two {
     opacity: 0;
   }
-  
+
   #open.on #three {
     transform: rotate(-45deg) translateX(10px) translateY(-12px);
-  }
-     
-  .container{
+  } */
+
+  .container {
     width: 100%;
     padding-top: 50px;
     min-height: auto;
   }
-  
+
   .one-half {
     max-width: 610px;
     padding: 20px 30px;
     margin: 5px 0 0;
   }
-  
+
   .illustration {
-    height: 360px; /*710*/
-    width: 100%; /*680*/
+    height: 360px;
+    width: 100%;
     background-size: contain;
     background-position: center;
   }
-    
+
   .intro h1 {
     font-size: 40px;
   }
-  
+
   .one-half p {
     font-size: 15px;
     margin: 0;
     padding-bottom: 30px;
   }
-  
-  .btn{
+
+  .btn {
     width: 6.5em;
     height: 2.5em;
     font-size: 16px;
@@ -680,7 +653,7 @@ font-family: inherit;
     transform: translate3d(0px, 320px, 0px);
   }
 
-  .card:hover > .content {
+  .card:hover>.content {
     transform: translate3d(0px, 210px, 0px);
   }
 
@@ -705,15 +678,14 @@ font-family: inherit;
     column-gap: .7em;
   }
 
-  .design-name{
+  .design-name {
     background-color: #ffffff;
-    height: 20%;
-    font-size: 10px;
+    height: 25%;
+    font-size: 9px;
     color: #6d105d;
-    /* transition: opacity .4s ease-out; */
     opacity: 1;
   }
- 
+
   .design-name h4 {
     margin: 3px;
   }
@@ -748,7 +720,7 @@ font-family: inherit;
     width: 90%;
   }
 
-  textarea{
+  textarea {
     width: 90%;
     margin: 2px;
   }
@@ -768,7 +740,8 @@ font-family: inherit;
     padding: 10px;
     font-size: 10px;
   }
-/* 
+
+  /* 
   .navigation {
     -webkit-flex-flow: column wrap;
     flex-flow: column wrap;
@@ -778,11 +751,11 @@ font-family: inherit;
 }
 
 
-@media only screen and (min-width: 767px) and (max-width: 1200px){
-  
+
+@media only screen and (min-width: 767px) and (max-width: 1200px) {
+
   .logo {
     margin-left: 20px;
-    /* padding: 20px 0 2px; */
   }
 
   .navlogo--small {
@@ -813,6 +786,7 @@ font-family: inherit;
     width: 650px;
     background-size: 650px;
   }
+
   .one-half {
     padding: 20px 5px;
     margin: 20px 5px;
@@ -826,6 +800,7 @@ font-family: inherit;
   .btn {
     margin-bottom: 10px;
   }
+
   .projects {
     min-height: auto;
   }
@@ -865,7 +840,7 @@ font-family: inherit;
     transform: translate3d(0px, 350px, 0px);
   }
 
-  .card:hover > .content {
+  .card:hover>.content {
     transform: translate3d(0px, 250px, 0px);
   }
 
@@ -873,7 +848,7 @@ font-family: inherit;
     padding: 0 0 40px;
     min-height: 60vh;
   }
-  
+
   .masonry {
     -moz-column-count: 3;
     -webkit-column-count: 3;
@@ -882,7 +857,7 @@ font-family: inherit;
     column-gap: .4em;
   }
 
-  .masonry--element{
+  .masonry--element {
     padding-bottom: 12px;
   }
 
@@ -917,16 +892,17 @@ font-family: inherit;
     padding-bottom: 20px;
   }
 
-
 }
 
 
-
-
 @media only screen and (min-width: 1201px) and (max-width: 1600px) {
-  
+
   .logo {
     margin-left: 35px;
+  }
+
+  .container {
+    top: 50px;
   }
 
   .links {
@@ -934,29 +910,40 @@ font-family: inherit;
     padding: 10px 25px;
   }
 
+  .one-half {
+    width: 590px;
+    padding-right: 10px;
+  }
+
+  .illustration {
+    background-size: 560px;
+  }
+
+  .intro h1 {
+    font-size: 70px;
+  }
+
+  .one-half p {
+    font-size: 22px;
+  }
+
   .hire-me h1 {
     font-size: 3.2em;
   }
-  
+
   .masonry {
-      -moz-column-count: 4;
-      -webkit-column-count: 4;
-      column-count: 4;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
   }
 }
 
 
-/*
-* I moved this here as it was being overidden by the media quierys above
-* now its working as it should only show one design element on mobile looks better
-* You should try to figure out how to get it in the current css @media queries you have
-*/
-
 @media only screen and (max-width: 411px) {
- 
+
   .masonry {
-      -moz-column-count: 1;
-      -webkit-column-count: 1;
-      column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
   }
 }
