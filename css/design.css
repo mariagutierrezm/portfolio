@@ -315,6 +315,8 @@ animation {
   text-transform: uppercase;
   transform: translate3d(0px, 140px, 0px);
   background-color: #f9d1f8ab;
+  padding: 10px;
+  color: #8900bd;
 }
 
 .content {
