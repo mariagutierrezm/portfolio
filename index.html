@@ -12,10 +12,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <link rel="stylesheet" href="css/design.css">
-
+  <link rel="stylesheet" href="./css/design.css">
+  
   <link href="https://fonts.googleapis.com/css?family=Courgette|Life+Savers|Mansalva&display=swap" rel="stylesheet">
-
   <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
 
 </head>
@@ -76,7 +75,7 @@
       <h2>Personal Projects</h2>
     </div>
     <div class="card--group">
-      <a href="https://github.com/mariagutierrezm/ecommerce-Project" target="_blank">
+      <a href="https://github.com/mariagutierrezm/ecommerceProject" target="_blank">
         <div class="card" style="background-image: url('./images/ecommerce-Java.jpg')">
           <h4>Ecommerce Project</h4>
           <div class="content">
@@ -197,70 +196,13 @@
   </div>
 
   <footer>
-    <div class="info">
-      <h5>All rights reserved...Maria's Website!</h5>
+    <div class="info" id="ndate">
+      <h5>Copyright C 2020, Maria Gutierrez</h5>
     </div>
   </footer>
 
-  <script>
-    window.onscroll = function () {
-      scrollFunction();
-    };
-
-    function scrollFunction() {
-
-      if (window.screen.width >= 768) {
-        if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-          document.getElementById("topnav").classList.add("topnav--scroll");
-          document.getElementById("tabs").classList.add("links--override");
-          document.getElementById("navlogo").classList.add("navlogo--small");
-        } else {
-          document.getElementById("topnav").classList.remove("topnav--scroll");
-          document.getElementById("tabs").classList.remove("links--override");
-          document.getElementById("navlogo").classList.remove("navlogo--small");
-        }
-      } else {
-        if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-          document.getElementById("nav-mobile").classList.add("topnav--mobile");
-        } else {
-          document.getElementById("nav-mobile").classList.remove("topnav--mobile");
-        }
-
-      }
-    }
-
-    var links = document.getElementById("tabs");
-    var nav = document.getElementById("topnav");
-    var burguer = document.getElementById("open");
-
-    var animationEndsBool = false;
-
-    burguer.addEventListener('transitionend', animationEnds);
-
-    function animationEnds() {
-      if (animationEndsBool == true) {
-        nav.style.height = "";
-        animationEndsBool = false;
-      }
-    }
-
-
-    function mobileMenuFunction() {
-      if (links.style.opacity === "0" || links.style.opacity === "") {
-        nav.style.height = "auto";
-        links.style.opacity = "1";
-        links.style.transitionDelay = ".6s";
-        burguer.style.padding = '0 0 200vw 200vw';
-      } else if (links.style.opacity === "1") {
-        links.style.opacity = "0";
-        burguer.style.padding = '';
-        links.style.transition = ".3s";
-        animationEndsBool = true;
-      }
-    }
-  </script>
-
-
+  <script src="./js/script.js"></script>
 
 </body>
+
 </html>
