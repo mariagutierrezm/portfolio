@@ -145,11 +145,7 @@ ul {
   transform: translateY(0em) scale(0.9);
 }
 
-/* .contact-me, .btn {
-  
-} */
-
-.logo {
+ .logo {
   margin-left: 50px;
   padding: 20px 20px 2px;
   background-image: url('../images/LogoYellow.svg');
