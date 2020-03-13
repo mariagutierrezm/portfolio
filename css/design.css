@@ -337,6 +337,10 @@ animation {
   font-weight: bold;
 }
 
+.tcard p {
+  color: #fff;
+}
+
 .designs {
   padding: 10px 0 40px 0;
   text-align: center;
