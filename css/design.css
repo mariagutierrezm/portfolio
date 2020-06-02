@@ -333,7 +333,8 @@ animation {
 
 .btn--info {
   width: 5.4em;
-  height: 2.5em;
+  height: 1.3em;
+  padding: 10px;
   transform: translateY(0);
   box-shadow: none;
   margin: 0;
